@@ -1,0 +1,63 @@
+<!--
+	Shamelessly blagged from the Twitter Bootstrap v2.3.2 documentation:
+	http://getbootstrap.com/2.3.2/scaffolding.html#responsive
+	(CC BY 3.0 http://creativecommons.org/licenses/by/3.0/)
+-->
+
+<style>
+	.responsive-utilities-test {
+		list-style: none outside none;
+		margin-left: 0;
+		margin-top: 5px;
+		overflow: hidden;
+	}
+	.responsive-utilities-test li {
+		border: 1px solid #DDDDDD;
+		border-radius: 4px;
+		color: #999999;
+		float: left;
+		font-size: 14px;
+		font-weight: bold;
+		height: 43px;
+		line-height: 43px;
+		position: relative;
+		text-align: center;
+		width: 25%;
+	}
+	.responsive-utilities-test li + li {
+		margin-left: 10px;
+	}
+	.responsive-utilities-test span {
+		border-radius: 4px;
+		bottom: -1px;
+		left: -1px;
+		position: absolute;
+		right: -1px;
+		top: -1px;
+	}
+	.responsive-utilities-test span {
+		background-color: #DFF0D8;
+		border: 1px solid #D6E9C6;
+		color: #468847;
+	}
+</style>
+
+<h2>Responsive Class Tester</h2>
+
+<p>
+	<a href="http://getbootstrap.com/2.3.2/scaffolding.html#responsive" target="_blank">Bootstrap viewport sizes</a> break down into three categories: &lsquo;Phone&rsquo; (less than 768px), &lsquo;Tablet&rsquo; (979px to 768px), and &lsquo;Desktop&rsquo; (greater than 980px). By using the utility classes <code>.visible-phone</code>, <code>.visible-tablet</code>, and <code>.visible-desktop</code>, you can show elements based on the viewport size. Conversely, you can hide elements with <code>.hidden-phone</code>, <code>.hidden-tablet</code>, and <code>.hidden-desktop</code>. Resize your browser to watch these test cases change.
+</p>
+
+<h3>Visible on...</h3>
+<ul class="responsive-utilities-test">
+	<li>Phone<span class="visible-phone">Phone</span></li>
+	<li>Tablet<span class="visible-tablet">Tablet</span></li>
+	<li>Desktop<span class="visible-desktop">Desktop</span></li>
+</ul>
+
+<h3>Hidden on...</h3>
+<ul class="responsive-utilities-test hidden-on">
+	<li>Phone<span class="hidden-phone">Phone</span></li>
+	<li>Tablet<span class="hidden-tablet">Tablet</span></li>
+	<li>Desktop<span class="hidden-desktop">Desktop</span></li>
+</ul>
